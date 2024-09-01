@@ -1,0 +1,27 @@
+.mainContainer {
+    padding-inline: 32px;
+    background-color: darkblue;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navButton {
+    display: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.navButton:hover {
+    background-color: blue;
+}
+
+@media only screen and (max-width:768px) {
+    .navButton {
+        display: block;
+    }
+}

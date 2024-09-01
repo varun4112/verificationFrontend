@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    flex: none;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .sidebar {
+        width: 16rem;
+    }
+
+    .content {
+        padding: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}

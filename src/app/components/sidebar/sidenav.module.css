@@ -1,0 +1,90 @@
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px 12px;
+    border-right: 1px solid rgb(223, 223, 223);
+}
+
+
+/* Content area styles */
+.content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+/* Placeholder div styles */
+.placeholder {
+    display: none;
+}
+
+/* Sign-out button styles */
+.sign_out_button {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    padding: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign_out_button:hover {
+    background-color: #e0f2fe;
+    color: #7e22ce;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        padding: 16px 8px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .placeholder {
+        display: block;
+        flex-grow: 1;
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #f9fafb;
+    }
+
+    .sign_out_button {
+        justify-content: flex-start;
+        padding: 8px;
+        padding-left: 12px;
+    }
+
+    .sign_out_text {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: none;
+    }
+}
