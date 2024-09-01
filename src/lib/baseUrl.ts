@@ -1,5 +1,5 @@
 // baseurl.ts
-const BASE_URL = 'https://verification-2iqj.onrender.com';
+const BASE_URL = 'https://verification2-bzm7.onrender.com';
 // const BASE_URL = 'http://localhost:4000';
 
 
